@@ -2,7 +2,7 @@
 <widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "iq.imamali.net"
-        version   = "1.2" >
+        version   = "1.2.0" >
 		
 		
     <name>شبكة الامام علي</name>
@@ -53,6 +53,7 @@
     <plugin spec="https://github.com/apache/cordova-plugin-dialogs.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-file.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-file-transfer.git" source="git" />
+	<plugin spec="https://github.com/apache/cordova-plugin-geolocation.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-globalization.git" source="git" />
     <plugin spec="https://github.com/apache/cordova-plugin-inappbrowser.git" source="git" />
 	<gap:plugin name="org.apache.cordova.media" source="npm" />

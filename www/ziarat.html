@@ -103,7 +103,7 @@
 							navigator.notification.alert(
 								'يجب عليك الاتصال بالانترنت',  // message
 								temp_function,         // callback
-								'تنبيه',            // title
+								'انتباه',            // title
 								'نعم'                  // buttonName
 							);
 						}
@@ -115,6 +115,9 @@
 								return false;
 							}
 							else{
+								
+								$("input[type='submit']").attr('disabled', 'disabled');
+								
 								var n = document.getElementsByName("name");
 								var c = document.getElementsByName("country");
 								var ci = document.getElementsByName("city");
@@ -156,6 +159,10 @@
 										alert("لم تتم عملية التسجيل بنجاح، حاول مرة اخرى.");
 										//alert("Data: " + data + "\nStatus: " + status);
 									}
+									
+									$("input[type='submit']").removeAttr('disabled');
+
+									
 								});
 							}
 						}
