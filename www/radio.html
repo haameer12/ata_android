@@ -73,13 +73,16 @@
 				*/
 				audio = new Media(file, function(){ // success callback
 					console.log("playing");
+					window.alert("play");
 				}, function(error){ // error callback
+					window.alert("error");
 					console.log("code: "    + error.code    + "\n" + "message: " + error.message + "\n");
 					if(error.code==0)
 						alert("Media server is not responding!");
 					//alert("code: "    + error.code    + "\n" + "message: " + error.message + "\n");
 				});
 				audio.play({ playAudioWhenScreenIsLocked : true });
+				window.alert("end");
 				//audio.seekTo(0);
 			}, 50);
 			register_notification();
