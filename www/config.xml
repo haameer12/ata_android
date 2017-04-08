@@ -52,7 +52,7 @@
 	<plugin name="org.apache.cordova.file-transfer" source="npm" />
 	<plugin name="org.apache.cordova.geolocation" source="npm" />
 	<plugin name="org.apache.cordova.inappbrowser" source="npm" />
-	<plugin name="org.apache.cordova.media" source="npm" />
+	<plugin name="cordova-plugin-media" source="npm" />
 	<plugin name="org.apache.cordova.network-information" source="npm" />
 	<plugin name="org.apache.cordova.splashscreen" source="npm" />
 	
