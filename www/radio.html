@@ -54,7 +54,7 @@
 			var networkState = navigator.connection.type;
 
 			FastClick.attach(document.body);
-			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
+			if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT/android_asset/www/
 				document.addEventListener("backbutton", radio_goback, false);
 			}
 			function radio_goback() {
@@ -64,7 +64,8 @@
 			setTimeout(function(){
 				window.alert("hi");
 				
-				var my_media = new Media("audio/besmella.mp3",
+				// Play the audio file at url
+				var my_media = new Media("/android_asset/www/audio/besmella.mp3",
 					// success callback
 					function () { console.log("playAudio():Audio Success"); },
 					// error callback
@@ -73,6 +74,15 @@
 			
 				// Play audio
 				my_media.play();
+				
+				
+				
+				window.alert("end");
+				
+				
+
+			}, 50);
+			
 		}
 
 			
