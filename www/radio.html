@@ -63,30 +63,16 @@
 			}
 			setTimeout(function(){
 				window.alert("hi");
-				file = "sound.mp3";
-				file = "http://37.236.145.99/radio.mp3";
-				file = "http://109.205.117.206/radio.mp3";
-				/*
-				if ( device.platform == 'Android' ){//Android,iOS,win7=WinCE,win8=Win32NT
-					file = "/android_asset/www/" + file;
-				}
-				*/
-				audio = new Media("audio/besmella.mp3", function(){ // success callback
-					console.log("playing");
-					window.alert("play");
-				}, function(error){ // error callback
-					window.alert("error");
-					console.log("code: "    + error.code    + "\n" + "message: " + error.message + "\n");
-					if(error.code==0)
-						alert("Media server is not responding!");
-					//alert("code: "    + error.code    + "\n" + "message: " + error.message + "\n");
-				});
-				window.alert("end");
-				audio.play({ playAudioWhenScreenIsLocked : true });
 				
-				//audio.seekTo(0);
-			}, 50);
-			register_notification();
+				var my_media = new Media("audio/besmella.mp3",
+					// success callback
+					function () { console.log("playAudio():Audio Success"); },
+					// error callback
+					function (err) { console.log("playAudio():Audio Error: " + err); }
+				);
+			
+				// Play audio
+				my_media.play();
 		}
 
 			
