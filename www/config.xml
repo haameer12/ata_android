@@ -71,7 +71,18 @@
     -->	
 	<!-- <gap:plugin name="cordova-plugin-x-socialsharing" source="npm" />-->
     <!--<gap:plugin name="com.phonegap.plugins.pushplugin" />-->
-	<plugin spec="https://github.com/phonegap-build/PushPlugin.git" source="git" />
+	<!--<plugin spec="https://github.com/phonegap-build/PushPlugin.git" source="git" />-->
+	
+	
+	
+	
+	<preference name="android-build-tool" value="gradle" />
+	<plugin name="phonegap-plugin-push" source="npm">
+		<param name="SENDER_ID" value="1069136326484" />
+	</plugin>
+	
+	
+	
 	<plugin spec="https://github.com/Paldom/UniqueDeviceID.git" source="git" />
 	<plugin spec="https://github.com/apache/cordova-plugin-statusbar.git" source="git" />
 	<gap:config-file platform="ios" parent="UIStatusBarHidden">
