@@ -20,7 +20,7 @@ function register_notification_home() {
 
 		push.on('registration', function(data) {
 			// data.registrationId
-			alert("registration event: " + data.registrationId);
+			// alert("registration event: " + data.registrationId);
 			$.ajax({ type: "POST",
 					url: "http://imamali.net/app-json/set_new_user.php", 
 					data: {regID : data.registrationId,user:window.localStorage.getItem('uuid'),OS:device.platform},
